@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "High Cruiser";
+  src: url(".fonts/HighCruiser.ttf") format("truetype"),
+    url("./fonts/HighCruiser.otf") format("opentype");
+}
+
 /*************** GENERAL ***************/
 
 body {
@@ -22,7 +28,7 @@ h1,
 h2,
 h3,
 #logo {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "High Cruiser", sans-serif;
 }
 
 h2 {
