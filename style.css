@@ -193,10 +193,12 @@ figure {
 }
 
 figure p {
+  text-align: justify;
   font-family: "Archivo Black", sans-serif;
   font-size: 5vh;
 }
 
 figcaption {
+  text-align: right;
   font-size: 4vh;
 }
