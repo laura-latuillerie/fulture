@@ -67,7 +67,7 @@ nav {
 
 header,
 #banner {
-  background-color: #5902ec;
+  background-color: #641c4b;
   color: white;
 }
 
@@ -89,8 +89,8 @@ header,
 }
 
 #banner-text h1 {
-  font-size: 4rem;
-  line-height: 0.5em;
+  font-size: 3rem;
+  line-height: 1em;
 }
 
 h1 > span {
