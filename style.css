@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "High Cruiser";
-  src: url(".fonts/HighCruiser.ttf") format("truetype"),
+  src: url("./fonts/HighCruiser.ttf") format("truetype"),
     url("./fonts/HighCruiser.otf") format("opentype");
 }
 
@@ -44,16 +44,25 @@ a {
   display: inline-block;
   padding: 2px 10px;
   border-radius: 10px;
+  text-decoration: none;
+  color: white;
 }
 
-.afr,
-.amo,
-.fam,
-.rac,
-.imm,
-.sex,
-.psy {
+.tag:hover {
+  text-decoration: none;
   color: white;
+}
+
+.tag.light {
+  color: black;
+}
+
+.tag.light:hover {
+  color: black;
+}
+
+.all {
+  background-color: aliceblue;
 }
 
 .afr {
@@ -89,6 +98,7 @@ a {
 .tem {
   background-color: peachpuff;
 }
+
 /*************** HEADER ***************/
 
 .navbar {
@@ -158,8 +168,7 @@ h2 > span {
 }
 
 /*************** BLOCK PODCASTS ***************/
-
-#podcasts {
+.podcasts {
   padding: 5% 5%;
 }
 

@@ -109,15 +109,23 @@
       </div>
     </div>
   </div>
-
+  
   <!-- ***** BLOCK PODCASTS ***** -->
-
-  <div class="container-fluid" id="podcasts">
+  
+  <div class="container-fluid podcasts" id="data-easyfilter">
     <h2>Découvrir Les Podcasts</h2>
-    <div class="row row-cols-1 row-cols-md-2 g-4 card-deck">
-      <div class="col card-group">
+    
+   
+      <div id="tags-container">
+        <a href ="#podcasts" class="tag light all" data-easyfilter="*"> Show all</a>
+        <a href ="#podcasts" class="tag afr" data-easyfilter="afrique"> Afrique</a>
+        <a href ="#podcasts" class="tag light asi" data-easyfilter="asie"> Asie</a>
+        <a href ="#podcasts#" class="tag rac" data-easyfilter="racisme"> Racisme</a>
+        <a href ="#podcasts" class="tag amo" data-easyfilter="amour"> Amour</a>
+      </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col card-group" data-easyitem="afrique, racisme, *">
         <div class="card">
-          
           <img
           src="https://cdn-images-1.listennotes.com/podcasts/pigments-18DgcNmoIwz-lc-BmhGweKC.1400x1400.jpg"
           class="card-img-top"
@@ -130,7 +138,7 @@
               <span class="tag rac">Racisme</span>
               <span class="tag amo">Amour</span>
               <span class="tag imm">Immigration</span>
-              <span class="tag tem">Témoignages</span>
+              <span class="tag light tem">Témoignages</span>
             </p>
             <h5 class="card-title"><strong>Pigments</strong></h5>
             <p class="card-text">
@@ -141,8 +149,8 @@
             <div class="podcast-link-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
               <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-            
-            <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
+              
+              <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
             </div>
           </div>
           <div class="card-footer text-muted">
@@ -150,8 +158,8 @@
           </div>
         </div>
       </div>
-
-      <div class="col  card-group">
+      
+      <div class="col card-group"  data-easyitem="amour, témoignage *">
         <div class="card">
           <img
           src="https://i.scdn.co/image/ab6765630000ba8a93ae6c33afc3645ae5100602"
@@ -161,10 +169,10 @@
           <div class="card-body">
             <p class="tags-container">
               <span class="tag sex">Sexualité</span>
-              <span class="tag soc">Société</span>
+              <span class="tag light soc">Société</span>
               <span class="tag psy">Psychologie</span>
               <span class="tag amo">Amour</span>
-              <span class="tag tem">Témoignages</span>
+              <span class="tag light tem">Témoignages</span>
             </p>
             <h5 class="card-title"><strong>Le Coeur sur la Table</strong></h5>
             <p class="card-text">
@@ -173,8 +181,8 @@
             <div class="podcast-link-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
               <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-            
-            <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
+              
+              <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
             </div>
           </div>
           
@@ -183,8 +191,8 @@
           </div>
         </div>
       </div>
-
-      <div class="col  card-group">
+      
+      <div class="col  card-group"  data-easyitem="asie, témoignage *">
         <div class="card">
           <img
           src="https://www.paulette-magazine.com/wp-content/uploads/2021/04/cover_asiattitudes_haute_definition.jpg"
@@ -193,11 +201,11 @@
           />
           <div class="card-body">
             <p class="tags-container">
-              <span class="tag asi">Asie</span>
+              <span class="tag light asi">Asie</span>
               <span class="tag fam">Famille</span>
               <span class="tag psy">Psychologie</span>
               <span class="tag amo">Amour</span>
-              <span class="tag tem">Témoignages</span>
+              <span class="tag light tem">Témoignages</span>
             </p>
             <h5 class="card-title"><strong>Asiattitudes</strong></h5>
             <p class="card-text">A travers des interviews de personnalités, des recommandations culturelles et des chroniques, Asiattitudes propose des inspirations, des réflexions et des informations sur les histoires liées à la diaspora asiatique en France.
@@ -205,8 +213,8 @@
             <div class="podcast-link-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
               <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-            
-            <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
+              
+              <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
             </div>
           </div>
           
@@ -220,9 +228,9 @@
       
       
     </div>
-     <!-- ***** END of BLOCK PODCASTS ***** -->
-
-      <!-- ***** BLOCK SUBSCRIBE ***** -->
+    <!-- ***** END of BLOCK PODCASTS ***** -->
+    
+    <!-- ***** BLOCK SUBSCRIBE ***** -->
     
     <div class="container-fluid subscribe" id="subscribe">
       <div id="container subscribe-box">
@@ -240,11 +248,13 @@
         </div>
       </div>
     </div>
-
-     <!-- ***** End of BLOCK SUBSCRIBE ***** -->
+    
+    <!-- ***** End of BLOCK SUBSCRIBE ***** -->
   </main>
   
-   <!-- ***** BOOTSTRAP SCRIPT ***** -->
+  <!-- ***** BOOTSTRAP SCRIPT ***** -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
   <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -260,7 +270,13 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"
   ></script>
-
+  <script src="./jquery.easyFilter.js"></script>
+  <script>$(function () {
+    $("#easy-filter-wrap").easyFilter();
+  });
+  
+  </script>
+  
   <!-- ***** End of BOOTSTRAP SCRIPT ***** -->
   <footer>Copyright © Laura Latuillerie 2022</footer>
 </body>
