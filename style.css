@@ -120,7 +120,7 @@ h1 > span {
 /*************** BLOCK "MEDIA-TYPES ***************/
 
 #media-types {
-  padding-top: 10vh;
+  padding-top: 15vh;
   height: 100vh;
   flex-direction: column;
 }
@@ -176,7 +176,27 @@ h3 {
   margin: 0 20px;
 }
 
-h4 {
+#media-types h4 {
   display: none;
-  font-size: 1.2rem;
+}
+
+/*************** ABOUT BLOCK ***************/
+
+#about-fulture {
+  height: 100vh;
+  background-color: #fffa4d;
+  align-items: center;
+}
+
+figure {
+  padding: 0 10vh;
+}
+
+figure p {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 5vh;
+}
+
+figcaption {
+  font-size: 4vh;
 }
