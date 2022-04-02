@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/***** GENERAL *****/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+nav,
+.container {
+  display: flex;
+}
+
+h1,
+#logo {
+  font-family: "Archivo Black", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/***** HEADER *****/
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+
+#logo {
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a:hover {
+  text-decoration: overline;
+}
+
+header,
+#banner {
+  background-color: brown;
+}
+
+#banner {
+}
