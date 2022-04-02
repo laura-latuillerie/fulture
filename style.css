@@ -23,17 +23,12 @@ h2,
   font-family: "High Cruiser", sans-serif;
 }
 
-h2,
-h3 {
-  text-transform: uppercase;
-}
-
 h2 {
   font-size: 2.4rem;
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
@@ -41,6 +36,59 @@ a {
   color: white;
 }
 
+/*************** TAGS ***************/
+
+.tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.afr,
+.amo,
+.fam,
+.rac,
+.imm,
+.sex,
+.psy {
+  color: white;
+}
+
+.afr {
+  background-color: darkred;
+}
+
+.amo {
+  background-color: red;
+}
+
+.asi {
+  background-color: chartreuse;
+}
+
+.fam {
+  background-color: orange;
+}
+.rac {
+  background-color: black;
+}
+.imm {
+  background-color: palevioletred;
+}
+.sex {
+  background-color: blueviolet;
+}
+.soc {
+  background-color: aqua;
+}
+.psy {
+  background-color: brown;
+}
+.tem {
+  background-color: peachpuff;
+}
 /*************** HEADER ***************/
 
 .navbar {
@@ -109,89 +157,44 @@ h2 > span {
   color: #1c4b64;
 }
 
-/*************** BLOCK "MEDIA-TYPES ***************/
+/*************** BLOCK PODCASTS ***************/
 
-#media-types {
-  padding-top: 15vh;
-  height: 100vh;
-  flex-direction: column;
+#podcasts {
+  padding: 5% 5%;
+}
+
+.podcast-link {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
 }
 
 .card-deck {
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 
-.card-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 300px;
-  background-image: url(/media/svg-violet/2.svg);
-  background-size: cover;
+.card {
+  border-radius: 10px;
 }
 
-.card:nth-child(2) .card-top {
-  background-image: url(/media/svg-violet/4.svg);
+.card-img-top {
+  border-radius: 30px;
+  padding: 20px;
+}
+.tags-container {
+  margin-top: -20px;
+  margin-bottom: 2rem;
 }
 
-.card:nth-child(3) .card-top {
-  background-image: url(/media/svg-violet/1.svg);
+.card-text {
+  margin: 1rem auto;
 }
 
-.card:nth-child(4) .card-top {
-  background-image: url(/media/svg-violet/5.svg);
-}
-
-.card img {
-  height: auto;
-  width: 150px;
-  border-radius: 5px;
-}
-
-.media-buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.button {
-  padding: 15px;
-  color: #5902ec;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-h3 {
-  text-transform: uppercase;
-  margin: 0 20px;
-}
-
-#media-types h4 {
-  display: none;
-}
-
-/*************** ABOUT BLOCK ***************/
-
-#about-fulture {
-  height: 100vh;
-  background-color: #641c39;
-  color: white;
-  align-items: center;
-}
-
-figure {
-  padding: 0 10vh;
-}
-
-figure p {
+.card-text {
   text-align: justify;
-  font-family: "Archivo Black", sans-serif;
-  font-size: 5vh;
+  font-size: 0.8rem;
 }
 
-figcaption {
-  text-align: right;
-  font-size: 4vh;
+h5 {
+  font-size: 1.4rem;
 }

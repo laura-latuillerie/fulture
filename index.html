@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Les Oreilles d'Hécate - Médiathèque culturelle féministe</title>
-  </head>
-  <body>
-    <header>
-      <!--
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Les Oreilles d'Hécate - Médiathèque culturelle féministe</title>
+</head>
+<body>
+  <header>
+    <!--
       <nav>
         <div class="logo-holder"><img src="./media/logo.svg" id="logo" /></div>
         <ul class="nav-links">
@@ -35,176 +35,233 @@
           <li><a href="#subscribe">Newsletter</a></li>
         </ul>
       </nav>
-      -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"
-          ><img src="./media/logo.svg" id="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"
+      ><img src="./media/logo.svg" id="logo"
+      /></a>
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Podcasts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Concept</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">S'abonner</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Entrez vos mots-clés"
+        />
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+          Rechercher
         </button>
+      </form>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="container-fluid" id="banner">
+    <div class="row align-items-center">
+      <div class="col xs-12 sm-6" id="banner-img">
+        <img
+        src="media/moon_woman_maggie-stephenson.png"
+        alt="frida khalo drawing"
+        id="banner-img"
+        />
+      </div>
+      <div class="col xs-12 sm-6" id="banner-text">
+        <h1>Les Oreilles d'Hécate</h1>
+        <h2>
+          <span><em>Médiathèque culturelle des femmes</em></span>
+        </h2>
+        <p>
+          Mettre à l'honneur la culture avec le F de féminisme en
+          répertoriant et vous suggérant les oeuvres et supports de
+          centaines de créatrices de contenus. Notre outil de recherche et
+          de tri vous permettra de découvrir votre prochain média.
+        </p>
+        <a href="#about-fulture" class="banner-button"
+        >L'histoire de Fulture ></a
+        ><a href="#media-types" class="banner-button">Podcasts ></a>
+      </div>
+    </div>
+  </div>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Podcasts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Concept</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">S'abonner</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Entrez vos mots-clés"
-            />
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-              Rechercher
-            </button>
-          </form>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="container-fluid" id="banner">
-        <div class="row align-items-center">
-          <div class="col xs-12 sm-6" id="banner-img">
-            <img
-              src="media/moon_woman_maggie-stephenson.png"
-              alt="frida khalo drawing"
-              id="banner-img"
-            />
-          </div>
-          <div class="col xs-12 sm-6" id="banner-text">
-            <h1>Les Oreilles d'Hécate</h1>
-            <h2>
-              <span><em>Médiathèque culturelle des femmes</em></span>
-            </h2>
-            <p>
-              Mettre à l'honneur la culture avec le F de féminisme en
-              répertoriant et vous suggérant les oeuvres et supports de
-              centaines de créatrices de contenus. Notre outil de recherche et
-              de tri vous permettra de découvrir votre prochain média.
-            </p>
-            <a href="#about-fulture" class="banner-button"
-              >L'histoire de Fulture ></a
-            ><a href="#media-types" class="banner-button">Podcasts ></a>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid" id="media-types">
-        <h2>La sélection média de Fulture</h2>
-        <div class="media-buttons">
-          <a href="#" class="button">Recherche ></a
-          ><a href="#" class="button">Aléatoire ></a>
-        </div>
-        <div class="bg-card-deck"></div>
-        <div class="container-fluid card-deck">
-          <div class="card">
-            <div class="card-top">
-              <img
-                src="https://cdn-images-1.listennotes.com/podcasts/pigments-18DgcNmoIwz-lc-BmhGweKC.1400x1400.jpg"
-                alt="Cover podcast pigments"
-              />
-            </div>
-            <h4><i class="fa-solid fa-podcast"></i></h4>
-            <h3>Podcasts</h3>
-          </div>
-          <div class="card">
-            <div class="card-top">
-              <img
-                src="https://backend.streetpress.com/sites/default/files/field/image/affiche-ouvrir-la-voix.jpg"
-                alt="documentaire amandine gay ouvrir la voix"
-              />
-            </div>
-            <h4><i class="fa-solid fa-film"></i></h4>
-            <h3>Documentaires</h3>
-          </div>
-          <div class="card">
-            <div class="card-top">
-              <img
-                src="https://static.fnac-static.com/multimedia/Images/FR/NR/78/a0/d3/13869176/1507-1/tsp20220305065651/Et-maintenant-le-pouvoir.jpg"
-                alt="fania noel livre"
-              />
-            </div>
-            <h4><i class="fa-solid fa-book"></i></h4>
-            <h3>Livres</h3>
-          </div>
-          <div class="card">
-            <div class="card-top">
-              <img
-                src="https://pbs.twimg.com/profile_images/1493641566384234498/OVAr8CWd_400x400.jpg"
-                alt="logo slashasian"
-              />
-            </div>
-            <h4><i class="fa-brands fa-instagram"></i></h4>
-            <h3>Comptes Instagram</h3>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid d-flex align-items-center" id="about-fulture">
-        <figure>
-          <blockquote cite="#">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              inventore tempora accusamus consectetur saepe ipsam animi ipsum
-              modi blanditiis mollitia. Debitis similique, fuga exercitationem
-              accusantium sit ex accusamus sed delectus.
-            </p>
-          </blockquote>
-          <figcaption>—Laura Latuillerie, <cite>Fondatrice</cite></figcaption>
-        </figure>
-      </div>
-      <div class="container-fluid subscribe" id="subscribe">
-        <div id="container subscribe-box">
-          <div class="container subscribe-text">
-            <h4>Call to action</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              saepe, aut blanditiis optio minima dignissimos. Impedit fugiat
-              nemo mollitia vero soluta, provident ea fugit in corrupti
-              praesentium, quam quas? Iure.
-            </p>
-          </div>
-          <div class="container subscribe-btn">
-            <a href="#" id="subscribe-btn">Subscribe</a>
-          </div>
-        </div>
-      </div>
-    </main>
+  <!-- ***** BLOCK PODCASTS ***** -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <footer>Copyright © Laura Latuillerie 2022</footer>
-  </body>
+  <div class="container-fluid" id="podcasts">
+    <h2>Découvrir Les Podcasts</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 card-deck">
+      <div class="col card-group">
+        <div class="card">
+          
+          <img
+          src="https://cdn-images-1.listennotes.com/podcasts/pigments-18DgcNmoIwz-lc-BmhGweKC.1400x1400.jpg"
+          class="card-img-top"
+          alt="..."
+          />
+          <div class="card-body">
+            <p class="tags-container">
+              <span class="tag afr">Afrique</span>
+              <span class="tag fam">Famille</span>
+              <span class="tag rac">Racisme</span>
+              <span class="tag amo">Amour</span>
+              <span class="tag imm">Immigration</span>
+              <span class="tag tem">Témoignages</span>
+            </p>
+            <h5 class="card-title"><strong>Pigments</strong></h5>
+            <p class="card-text">
+              Documentaire audio où la créatrice nous amène dans une
+              conversation inter-générationnelle au sein de son clan de
+              femmes.
+            </p>
+            <div class="podcast-link-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
+              <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
+            
+            <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            Tara Mukeku-Cilolo
+          </div>
+        </div>
+      </div>
+
+      <div class="col  card-group">
+        <div class="card">
+          <img
+          src="https://i.scdn.co/image/ab6765630000ba8a93ae6c33afc3645ae5100602"
+          class="card-img-top"
+          alt="..."
+          />
+          <div class="card-body">
+            <p class="tags-container">
+              <span class="tag sex">Sexualité</span>
+              <span class="tag soc">Société</span>
+              <span class="tag psy">Psychologie</span>
+              <span class="tag amo">Amour</span>
+              <span class="tag tem">Témoignages</span>
+            </p>
+            <h5 class="card-title"><strong>Le Coeur sur la Table</strong></h5>
+            <p class="card-text">
+              Parce que s’aimer est l’une des façons de faire la révolution. Une fois par semaine, un épisode pour réinventer nos relations amoureuses, nos liens avec nos ami·e·s, nos parent·e·s et nos amant·e·s.
+            </p>
+            <div class="podcast-link-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
+              <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
+            
+            <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
+            </div>
+          </div>
+          
+          <div class="card-footer text-muted">
+            Victoire Tuaillon
+          </div>
+        </div>
+      </div>
+
+      <div class="col  card-group">
+        <div class="card">
+          <img
+          src="https://www.paulette-magazine.com/wp-content/uploads/2021/04/cover_asiattitudes_haute_definition.jpg"
+          class="card-img-top"
+          alt="..."
+          />
+          <div class="card-body">
+            <p class="tags-container">
+              <span class="tag asi">Asie</span>
+              <span class="tag fam">Famille</span>
+              <span class="tag psy">Psychologie</span>
+              <span class="tag amo">Amour</span>
+              <span class="tag tem">Témoignages</span>
+            </p>
+            <h5 class="card-title"><strong>Asiattitudes</strong></h5>
+            <p class="card-text">A travers des interviews de personnalités, des recommandations culturelles et des chroniques, Asiattitudes propose des inspirations, des réflexions et des informations sur les histoires liées à la diaspora asiatique en France.
+            </p>
+            <div class="podcast-link-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
+              <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
+            
+            <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
+            </div>
+          </div>
+          
+          <div class="card-footer text-muted">
+            Mélanie Hong
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+     <!-- ***** END of BLOCK PODCASTS ***** -->
+
+      <!-- ***** BLOCK SUBSCRIBE ***** -->
+    
+    <div class="container-fluid subscribe" id="subscribe">
+      <div id="container subscribe-box">
+        <div class="container subscribe-text">
+          <h4>Call to action</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            saepe, aut blanditiis optio minima dignissimos. Impedit fugiat
+            nemo mollitia vero soluta, provident ea fugit in corrupti
+            praesentium, quam quas? Iure.
+          </p>
+        </div>
+        <div class="container subscribe-btn">
+          <a href="#" id="subscribe-btn">Subscribe</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- ***** End of BLOCK SUBSCRIBE ***** -->
+  </main>
+  
+   <!-- ***** BOOTSTRAP SCRIPT ***** -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+  ></script>
+
+  <!-- ***** End of BOOTSTRAP SCRIPT ***** -->
+  <footer>Copyright © Laura Latuillerie 2022</footer>
+</body>
 </html>
