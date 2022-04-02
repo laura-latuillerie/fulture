@@ -3,12 +3,13 @@
   margin: 0;
 }
 
-/***** GENERAL *****/
+/*************** GENERAL ***************/
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   text-align: center;
+  color: rgb(44, 44, 44);
 }
 
 nav,
@@ -18,8 +19,15 @@ nav,
 }
 
 h1,
+h2,
+h3,
 #logo {
   font-family: "Archivo Black", sans-serif;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-style: italic;
 }
 
 main {
@@ -33,9 +41,10 @@ ul {
 a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
-/***** HEADER *****/
+/*************** HEADER ***************/
 
 nav {
   align-items: center;
@@ -58,7 +67,7 @@ nav {
 
 header,
 #banner {
-  background-color: brown;
+  background-color: #5902ec;
   color: white;
 }
 
@@ -80,8 +89,8 @@ header,
 }
 
 #banner-text h1 {
-  font-size: 3rem;
-  line-height: 1em;
+  font-size: 4rem;
+  line-height: 0.5em;
 }
 
 h1 > span {
@@ -96,7 +105,7 @@ h1 > span {
 .banner-button {
   display: inline-block;
   font-size: 1rem;
-  font-weight: bolder;
+  font-weight: bold;
   margin-right: 20px;
   padding: 15px 15px;
   border: 1px solid white;
@@ -105,5 +114,69 @@ h1 > span {
 
 .banner-button:hover {
   background-color: white;
-  color: #a52a2a;
+  color: #5902ec;
+}
+
+/*************** BLOCK "MEDIA-TYPES ***************/
+
+#media-types {
+  padding-top: 10vh;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.card-deck {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-image: url(/media/svg-violet/2.svg);
+  background-size: cover;
+}
+
+.card:nth-child(2) .card-top {
+  background-image: url(/media/svg-violet/4.svg);
+}
+
+.card:nth-child(3) .card-top {
+  background-image: url(/media/svg-violet/1.svg);
+}
+
+.card:nth-child(4) .card-top {
+  background-image: url(/media/svg-violet/5.svg);
+}
+
+.card img {
+  height: auto;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.media-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 15px;
+  color: #5902ec;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+h4 {
+  display: none;
+  font-size: 1.2rem;
 }

@@ -10,36 +10,41 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Fulture - Médiathèque culturelle féministe</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <div id="logo">FULTURE</div>
+        <ul class="nav-links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#about-fulture">Projet</a></li>
+          <li><a href="#media-types">Médiathèque</a></li>
+          <li><a href="#subscribe">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <header>
-        <nav>
-          <div id="logo">Fulture</div>
-          <ul class="nav-links">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#about-fulture">Projet</a></li>
-            <li><a href="#media-types">Médiathèque</a></li>
-            <li><a href="#subscribe">Newsletter</a></li>
-          </ul>
-        </nav>
-      </header>
-
       <div class="container" id="banner">
         <div id="banner-text">
           <h1>
-            Fulture<br />
+            FULTURE<br />
             <span><em>Médiathèque culturelle des femmes</em></span>
           </h1>
           <p>
             Mettre à l'honneur la culture avec le F de féminisme en répertoriant
             et vous suggérant les oeuvres et supports de centaines de créatrices
-            de contenus.
+            de contenus. Notre outil de recherche et de tri vous permettra de
+            découvrir votre prochain média.
           </p>
-          <a href="about-fulture" class="banner-button">L'histoire de Fulture</a
-          ><a href="media-types" class="banner-button">Types de médias</a>
+          <a href="#about-fulture" class="banner-button"
+            >L'histoire de Fulture</a
+          ><a href="#media-types" class="banner-button">Types de médias</a>
         </div>
         <div class="banner-img">
           <img
@@ -51,21 +56,52 @@
       </div>
       <div class="container" id="media-types">
         <h2>La sélection média de Fulture</h2>
-        <div class="card">
-          <img src="" alt="" />
-          <h3></h3>
+        <div class="media-buttons">
+          <a href="#" class="button">Recherche ></a
+          ><a href="#" class="button">Aléatoire ></a>
         </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h3></h3>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h3></h3>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h3></h3>
+        <div class="bg-card-deck"></div>
+        <div class="container card-deck">
+          <div class="card">
+            <div class="card-top">
+              <img
+                src="https://cdn-images-1.listennotes.com/podcasts/pigments-18DgcNmoIwz-lc-BmhGweKC.1400x1400.jpg"
+                alt="Cover podcast pigments"
+              />
+            </div>
+            <h4><i class="fa-solid fa-podcast"></i></h4>
+            <h3>Podcasts</h3>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <img
+                src="https://backend.streetpress.com/sites/default/files/field/image/affiche-ouvrir-la-voix.jpg"
+                alt="documentaire amandine gay ouvrir la voix"
+              />
+            </div>
+            <h4><i class="fa-solid fa-film"></i></h4>
+            <h3>Documentaires</h3>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <img
+                src="https://static.fnac-static.com/multimedia/Images/FR/NR/78/a0/d3/13869176/1507-1/tsp20220305065651/Et-maintenant-le-pouvoir.jpg"
+                alt="fania noel livre"
+              />
+            </div>
+            <h4><i class="fa-solid fa-book"></i></h4>
+            <h3>Livres</h3>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <img
+                src="https://pbs.twimg.com/profile_images/1493641566384234498/OVAr8CWd_400x400.jpg"
+                alt="logo slashasian"
+              />
+            </div>
+            <h4><i class="fa-brands fa-instagram"></i></h4>
+            <h3>Comptes Instagram</h3>
+          </div>
         </div>
       </div>
       <div class="container" id="about-fulture">
