@@ -112,20 +112,22 @@
   
   <!-- ***** BLOCK PODCASTS ***** -->
   
-  <div class="container-fluid podcasts" id="data-easyfilter">
+  <div class="container-fluid podcasts">
     <h2>Découvrir Les Podcasts</h2>
     
    
-      <div id="tags-container">
-        <a href ="#podcasts" class="tag light all" data-easyfilter="*"> Show all</a>
-        <a href ="#podcasts" class="tag afr" data-easyfilter="afrique"> Afrique</a>
-        <a href ="#podcasts" class="tag light asi" data-easyfilter="asie"> Asie</a>
-        <a href ="#podcasts#" class="tag rac" data-easyfilter="racisme"> Racisme</a>
-        <a href ="#podcasts" class="tag amo" data-easyfilter="amour"> Amour</a>
+      <div id="buttons">
+        <button class="btn tag light all" onclick="filterObjects('all')"> Show all</button>
+        <button class="btn tag afr" onclick="filterObjects('afrique')"> Afrique</button>
+        <button class="btn tag light asi" onclick="filterObjects('asie')"> Asie</button>
+        <button class="btn tag rac" onclick="filterObjects('racisme')"> Racisme</button>
+        <button class="btn tag amo" onclick="filterObjects('amour')"> Amour</button>
       </div>
-    <div class="row row-cols-1 row-cols-md-3 g-3">
-      <div class="col card-group" data-easyitem="afrique, racisme, *">
-        <div class="card">
+
+    <div class="row objects">
+
+      <div class="col card-group">
+        <div class="card box afrique racisme">
           <img
           src="https://cdn-images-1.listennotes.com/podcasts/pigments-18DgcNmoIwz-lc-BmhGweKC.1400x1400.jpg"
           class="card-img-top"
@@ -149,7 +151,6 @@
             <div class="podcast-link-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
               <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-              
               <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
             </div>
           </div>
@@ -159,8 +160,8 @@
         </div>
       </div>
       
-      <div class="col card-group"  data-easyitem="amour, témoignage *">
-        <div class="card">
+      <div class="col card-group">
+        <div class="card box amour témoignage">
           <img
           src="https://i.scdn.co/image/ab6765630000ba8a93ae6c33afc3645ae5100602"
           class="card-img-top"
@@ -181,7 +182,6 @@
             <div class="podcast-link-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
               <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-              
               <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
             </div>
           </div>
@@ -192,8 +192,8 @@
         </div>
       </div>
       
-      <div class="col  card-group"  data-easyitem="asie, témoignage *">
-        <div class="card">
+      <div class="col card-group">
+        <div class="card box asie témoignage">
           <img
           src="https://www.paulette-magazine.com/wp-content/uploads/2021/04/cover_asiattitudes_haute_definition.jpg"
           class="card-img-top"
@@ -213,7 +213,6 @@
             <div class="podcast-link-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
               <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-              
               <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
             </div>
           </div>
@@ -254,7 +253,6 @@
   
   <!-- ***** BOOTSTRAP SCRIPT ***** -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  
   <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -270,12 +268,7 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"
   ></script>
-  <script src="./jquery.easyFilter.js"></script>
-  <script>$(function () {
-    $("#easy-filter-wrap").easyFilter();
-  });
-  
-  </script>
+  <script src="./script.js"></script>
   
   <!-- ***** End of BOOTSTRAP SCRIPT ***** -->
   <footer>Copyright © Laura Latuillerie 2022</footer>

@@ -14,7 +14,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  color: rgb(44, 44, 44);
 }
 
 h1,
@@ -168,6 +167,7 @@ h2 > span {
 }
 
 /*************** BLOCK PODCASTS ***************/
+
 .podcasts {
   padding: 5% 5%;
 }
@@ -190,6 +190,12 @@ h2 > span {
   border-radius: 30px;
   padding: 20px;
 }
+
+#buttons {
+  margin-top: 20px;
+  margin-bottom: 2rem;
+}
+
 .tags-container {
   margin-top: -20px;
   margin-bottom: 2rem;
@@ -206,4 +212,14 @@ h2 > span {
 
 h5 {
   font-size: 1.4rem;
+}
+
+/*************** FILTER MODE ***************/
+
+.box {
+  display: none;
+}
+
+.show {
+  display: inline-block;
 }
