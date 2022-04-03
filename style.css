@@ -221,5 +221,13 @@ h5 {
 }
 
 .show {
-  display: inline-block;
+  display: block;
+}
+
+/********* ESSAI ************/
+
+.card-group {
+  width: 300px;
+  margin: auto;
+  float: left;
 }
