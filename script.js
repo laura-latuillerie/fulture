@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+  $(".loader-wrapper").fadeOut("slow");
+});
+
 $("#podcasts-filters li").click(function () {
   $("#podcasts-filters li").removeClass("filter-active");
   $(this).addClass("filter-active");
