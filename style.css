@@ -90,10 +90,12 @@ header,
 }
 
 #banner-text {
-  text-align: left;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 #banner-text p {
+  text-align: justify;
   margin: 20px 0;
 }
 
@@ -117,6 +119,7 @@ header,
 /*************** BLOCK PODCASTS ***************/
 
 .podcasts-block {
+  margin-top: 50px;
   padding: 5% 5%;
   background-color: none;
 }
@@ -205,44 +208,35 @@ header,
 }
 
 .quote-words-content img {
-  width: 30%;
+  width: 50%;
   margin: 0 auto 50px auto;
 }
 
 blockquote {
   text-align: justify;
   font-family: "Archivo Black", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 figcaption {
   text-align: right;
 }
 
-/*************** BLOCK QUOTE ***************/
+/*************** BLOCK SUBSCRIbE ***************/
 
 .subscribe {
-  padding: 100px 0;
-}
-
-.subscribe-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10%;
-  height: 200px;
-  border-radius: 10px;
-  background: #1c4b64;
-  box-shadow: 0 0 20px gainsboro;
+  margin: 50px 0;
   color: white;
 }
 
-.subscribe-text {
-  text-align: left;
-  padding-right: 20%;
+.subscribe-box {
+  border-radius: 10px;
+  background: #1c4b64;
+  padding: 50px 20px 10px 20px;
+  box-shadow: 0 0 30px gainsboro;
 }
 
-/*************** BLOCK QUOTE ***************/
+/*************** FOOTER ***************/
 
 footer {
   padding: 10px;
@@ -319,5 +313,42 @@ footer {
   }
   100% {
     height: 0%;
+  }
+}
+
+/*************** RESPONSIVE ***************/
+@media (min-width: 768px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+  #banner-text {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  blockquote {
+    font-size: 1.4rem;
+  }
+  .quote-words-content img {
+    width: 30%;
+    margin: 0 auto 50px auto;
+  }
+
+  .subscribe {
+    padding: 100px 0;
+  }
+
+  .subscribe-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 200px;
+    box-shadow: 0 0 20px gainsboro;
+  }
+
+  .subscribe-text {
+    text-align: left;
+    padding-right: 20%;
   }
 }
