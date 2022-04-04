@@ -124,6 +124,10 @@ header,
   background-color: none;
 }
 
+#podcasts-filters {
+  padding-inline-start: 0px;
+}
+
 .podcasts-filters-container {
   margin: 10px auto 40px auto;
 }
