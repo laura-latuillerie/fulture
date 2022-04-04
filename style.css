@@ -3,6 +3,8 @@
   margin: 0;
 }
 
+/*************** FONTS ***************/
+
 @font-face {
   font-family: "High Cruiser";
   src: url("./fonts/HighCruiser.ttf") format("truetype"),
@@ -16,14 +18,31 @@ body {
   text-align: center;
 }
 
-h1,
-h2,
-#logo {
+h1 {
   font-family: "High Cruiser", sans-serif;
+  font-size: 3rem;
+  line-height: 0.75em;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+h2 span {
+  font-family: "High Cruiser", sans-serif;
+  font-size: 2rem;
+}
+
+h3,
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 ul {
@@ -35,74 +54,12 @@ a {
   color: white;
 }
 
-/*************** TAGS ***************/
-
-.tag {
-  font-size: 0.8rem;
-  font-weight: 600;
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-}
-
-.tag:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.tag.light {
-  color: black;
-}
-
-.tag.light:hover {
-  color: black;
-}
-
-.all {
-  background-color: aliceblue;
-}
-
-.afr {
-  background-color: darkred;
-}
-
-.amo {
-  background-color: red;
-}
-
-.asi {
-  background-color: chartreuse;
-}
-
-.fam {
-  background-color: orange;
-}
-.rac {
-  background-color: black;
-}
-.imm {
-  background-color: palevioletred;
-}
-.sex {
-  background-color: blueviolet;
-}
-.soc {
-  background-color: aqua;
-}
-.psy {
-  background-color: brown;
-}
-.tem {
-  background-color: peachpuff;
-}
-
-/*************** HEADER ***************/
+/*************** NAVBAR ***************/
 
 .navbar {
   padding: 10px 5vh;
 }
+
 .nav-link:hover {
   text-decoration: overline;
 }
@@ -113,41 +70,26 @@ a {
   margin-left: -20px;
 }
 
+/*************** HEADER ***************/
+
 .navbar,
 header,
 #banner {
   background-color: #1c4b64;
   color: white;
-}
-
-#banner {
-  padding: 2vh 5vh;
   margin: auto;
 }
 
 #banner-img {
-  width: 60vh;
-  max-width: auto;
+  width: 100%;
 }
 
 #banner-text {
   text-align: left;
 }
 
-#banner-text h1 {
-  font-size: 3rem;
-  line-height: 0.75em;
-}
-
-h2 > span {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
 #banner-text p {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .banner-button {
@@ -158,6 +100,7 @@ h2 > span {
   padding: 15px 15px;
   border: 1px solid white;
   border-radius: 10px;
+  transition: all 200ms ease-in-out;
 }
 
 .banner-button:hover {
@@ -168,8 +111,39 @@ h2 > span {
 
 /*************** BLOCK PODCASTS ***************/
 
-.podcasts {
+.podcasts-block {
   padding: 5% 5%;
+  background-color: none;
+}
+
+.podcasts-filters-container {
+  margin: 10px auto 40px auto;
+}
+
+#podcasts-block .podcasts-item {
+  height: 300px;
+  overflow: hidden !important;
+  margin-bottom: 15px;
+  transition: all 100ms ease;
+  transform: scale(1);
+}
+
+.tags-container {
+  margin-top: -20px;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  max-width: 250px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.card-text {
+  text-align: justify;
+  font-size: 0.8rem;
+  margin: 1rem auto;
 }
 
 .podcast-link {
@@ -178,56 +152,36 @@ h2 > span {
   margin: 0 10px;
 }
 
-.card-deck {
-  margin: 50px auto;
+.cardo-group {
+  position: relative;
 }
 
-.card {
-  border-radius: 10px;
+.card-body,
+.podcasts-item img,
+.podcast-link-container {
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.card-img-top {
-  border-radius: 30px;
-  padding: 20px;
+.card-body {
+  position: relative;
+  background-color: white;
+  top: -80px;
+  padding: 100px 20px 20px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px gainsboro;
+  z-index: -1;
+  height: 380px;
 }
 
-#buttons {
-  margin-top: 20px;
-  margin-bottom: 2rem;
+#podcasts-block .podcasts-item img {
+  position: absolute;
+  z-index: 1;
+  height: auto;
 }
 
-.tags-container {
-  margin-top: -20px;
-  margin-bottom: 2rem;
-}
-
-.card-text {
-  margin: 1rem auto;
-}
-
-.card-text {
-  text-align: justify;
-  font-size: 0.8rem;
-}
-
-h5 {
-  font-size: 1.4rem;
-}
-
-/*************** FILTER MODE ***************/
-
-.box {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-/********* ESSAI ************/
-
-.card-group {
-  width: 300px;
+.podcast-link-container {
+  position: absolute;
+  width: 100%;
   margin: auto;
-  float: left;
+  bottom: 20px;
 }

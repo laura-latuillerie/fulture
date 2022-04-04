@@ -21,10 +21,12 @@
   rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="tags.css">
   <title>Les Oreilles d'Hécate - Médiathèque culturelle féministe</title>
 </head>
 <body>
   <header>
+    <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#"
       ><img src="./media/logo.svg" id="logo"
@@ -70,21 +72,22 @@
       </form>
     </div>
   </nav>
+  </div>
 </header>
-<main>
-  <div class="container-fluid" id="banner">
+<div class="container-fluid" id="banner">
+  <div class="container">
     <div class="row align-items-center">
-      <div class="col xs-12 sm-6" id="banner-img">
+      <div class="col col-xs-12 col-sm-5">
         <img
         src="media/moon_woman_maggie-stephenson.png"
         alt="frida khalo drawing"
         id="banner-img"
         />
       </div>
-      <div class="col xs-12 sm-6" id="banner-text">
+      <div class="col col-xs-12 col-sm-7" id="banner-text">
         <h1>Les Oreilles d'Hécate</h1>
         <h2>
-          <span><em>Médiathèque culturelle des femmes</em></span>
+          <em>Médiathèque culturelle des femmes</em>
         </h2>
         <p>
           Mettre à l'honneur la culture avec le F de féminisme en
@@ -98,168 +101,203 @@
       </div>
     </div>
   </div>
-  
+</div>
   <!-- ***** BLOCK PODCASTS ***** -->
   
-  <div class="container-fluid podcasts">
-    <h2>Découvrir Les Podcasts</h2>
+  <div class="container-fluid podcasts-block">
+    <h2><span>La recherche d'Hécate</span></h2>
+    <h3><span>Voici un exemple d'utilisation de notre outil de recherche d'Hécate.<br> Filtrez les podcasts en cliquant sur les tags</span></h3>
     
-   
-      <div id="buttons">
-        <button class="btn tag light all" onclick="filterObjects('all')"> Show all</button>
-        <button class="btn tag afr" onclick="filterObjects('afrique')"> Afrique</button>
-        <button class="btn tag light asi" onclick="filterObjects('asie')"> Asie</button>
-        <button class="btn tag rac" onclick="filterObjects('racisme')"> Racisme</button>
-        <button class="btn tag amo" onclick="filterObjects('amour')"> Amour</button>
-      </div>
-
-    <div class="row objects">
-
-      <div class="col card-group">
-        <div class="card box afrique racisme">
-          <img
-          src="https://cdn-images-1.listennotes.com/podcasts/pigments-18DgcNmoIwz-lc-BmhGweKC.1400x1400.jpg"
-          class="card-img-top"
-          alt="..."
-          />
-          <div class="card-body">
-            <p class="tags-container">
-              <span class="tag afr">Afrique</span>
-              <span class="tag fam">Famille</span>
-              <span class="tag rac">Racisme</span>
-              <span class="tag amo">Amour</span>
-              <span class="tag imm">Immigration</span>
-              <span class="tag light tem">Témoignages</span>
-            </p>
-            <h5 class="card-title"><strong>Pigments</strong></h5>
-            <p class="card-text">
-              Documentaire audio où la créatrice nous amène dans une
-              conversation inter-générationnelle au sein de son clan de
-              femmes.
-            </p>
-            <div class="podcast-link-container">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
-              <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-              <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
-            </div>
-          </div>
-          <div class="card-footer text-muted">
-            Tara Mukeku-Cilolo
-          </div>
-        </div>
-      </div>
-      
-      <div class="col card-group">
-        <div class="card box amour témoignage">
-          <img
-          src="https://i.scdn.co/image/ab6765630000ba8a93ae6c33afc3645ae5100602"
-          class="card-img-top"
-          alt="..."
-          />
-          <div class="card-body">
-            <p class="tags-container">
-              <span class="tag sex">Sexualité</span>
-              <span class="tag light soc">Société</span>
-              <span class="tag psy">Psychologie</span>
-              <span class="tag amo">Amour</span>
-              <span class="tag light tem">Témoignages</span>
-            </p>
-            <h5 class="card-title"><strong>Le Coeur sur la Table</strong></h5>
-            <p class="card-text">
-              Parce que s’aimer est l’une des façons de faire la révolution. Une fois par semaine, un épisode pour réinventer nos relations amoureuses, nos liens avec nos ami·e·s, nos parent·e·s et nos amant·e·s.
-            </p>
-            <div class="podcast-link-container">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
-              <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-              <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
-            </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 podcasts-filters-container">
+          <ul id="podcasts-filters">
+            <li
+            class="tag light all"
+            data-filter=".show-all"
+            >
+            Show all
+          </li>
+          <li class="tag afr" data-filter=".afrique">Afrique</li>
+          <li class="tag amo" data-filter=".amour">Amour</li>
+          <li class="tag light asi" data-filter=".asie">Asie</li>
+          <li class="tag fam" data-filter=".famille">Famille</li>
+          <li class="tag imm" data-filter=".immigration">Immigration</li>
+          <li class="tag psy" data-filter=".psychologie">Psychologie</li>
+          <li class="tag sex" data-filter=".sexualite">Sexualité</li>
+          <li class="tag light soc" data-filter=".psychologie">Société</li>
+          <li class="tag rac" data-filter=".racisme">Racisme</li>
+          <li class="tag light tem" data-filter=".temoignage">Témoignage</li>
           
-          <div class="card-footer text-muted">
-            Victoire Tuaillon
-          </div>
-        </div>
+        </ul>
       </div>
-      
-      <div class="col card-group">
-        <div class="card box asie témoignage">
-          <img
-          src="https://www.paulette-magazine.com/wp-content/uploads/2021/04/cover_asiattitudes_haute_definition.jpg"
-          class="card-img-top"
-          alt="..."
-          />
-          <div class="card-body">
-            <p class="tags-container">
-              <span class="tag light asi">Asie</span>
-              <span class="tag fam">Famille</span>
-              <span class="tag psy">Psychologie</span>
-              <span class="tag amo">Amour</span>
-              <span class="tag light tem">Témoignages</span>
-            </p>
-            <h5 class="card-title"><strong>Asiattitudes</strong></h5>
-            <p class="card-text">A travers des interviews de personnalités, des recommandations culturelles et des chroniques, Asiattitudes propose des inspirations, des réflexions et des informations sur les histoires liées à la diaspora asiatique en France.
-            </p>
-            <div class="podcast-link-container">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png" alt="logo spotify" class="podcast-link">
-              <img src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png" alt="logo apple podcast" class="podcast-link">
-              <img src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD" alt="google podcast" class="podcast-link">
-            </div>
-          </div>
-          
-          <div class="card-footer text-muted">
-            Mélanie Hong
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
     </div>
-    <!-- ***** END of BLOCK PODCASTS ***** -->
     
-    <!-- ***** BLOCK SUBSCRIBE ***** -->
-    
-    <div class="container-fluid subscribe" id="subscribe">
-      <div id="container subscribe-box">
-        <div class="container subscribe-text">
-          <h4>Call to action</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            saepe, aut blanditiis optio minima dignissimos. Impedit fugiat
-            nemo mollitia vero soluta, provident ea fugit in corrupti
-            praesentium, quam quas? Iure.
-          </p>
-        </div>
-        <div class="container subscribe-btn">
-          <a href="#" id="subscribe-btn">Subscribe</a>
+    <div class="row fadeIn fadeOut podcasts-wrapper">
+      <div
+      class="col-lg-4 col-md-6 cardo-group podcasts-item show-all afrique amour  famille immigration racisme temoignage"
+      >
+      <img
+      src="https://cdn-images-1.listennotes.com/podcasts/pigments-18DgcNmoIwz-lc-BmhGweKC.1400x1400.jpg"
+      class="card-img-top"
+      alt="..."
+      />
+      <div class="card-body">
+        <p class="tags-container">
+          <span class="tag afr">Afrique</span>
+          <span class="tag fam">Famille</span>
+          <span class="tag rac">Racisme</span>
+          <span class="tag amo">Amour</span>
+          <span class="tag imm">Immigration</span>
+          <span class="tag light tem">Témoignages</span>
+        </p>
+        <h5 class="card-title"><strong>Pigments</strong></h5>
+        
+        <h6>Tara Mukeku-Cilolo</h6>
+        <p class="card-text">
+          Documentaire audio où la créatrice nous amène dans une
+          conversation inter-générationnelle au sein de son clan de
+          femmes.
+        </p>
+        <div class="podcast-link-container">
+          <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png"
+          alt="logo spotify"
+          class="podcast-link"
+          />
+          <img
+          src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png"
+          alt="logo apple podcast"
+          class="podcast-link"
+          />
+          <img
+          src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD"
+          alt="google podcast"
+          class="podcast-link"
+          />
         </div>
       </div>
     </div>
     
-    <!-- ***** End of BLOCK SUBSCRIBE ***** -->
-  </main>
-  
-  <!-- ***** BOOTSTRAP SCRIPT ***** -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"
-  ></script>
-  <script
-  src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"
-  ></script>
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"
-  ></script>
-  <script src="./script.js"></script>
-  
-  <!-- ***** End of BOOTSTRAP SCRIPT ***** -->
-  <footer>Copyright © Laura Latuillerie 2022</footer>
+    <div class="col-lg-4 col-md-6 cardo-group podcasts-item show-all sexualite societe psychologie amour temoignage">
+      <img
+      src="https://i.scdn.co/image/ab6765630000ba8a93ae6c33afc3645ae5100602"
+      class="card-img-top"
+      alt="..."
+      />
+      <div class="card-body">
+        <p class="tags-container">
+          <span class="tag sex">Sexualité</span>
+          <span class="tag light soc">Société</span>
+          <span class="tag psy">Psychologie</span>
+          <span class="tag amo">Amour</span>
+          <span class="tag light tem">Témoignages</span>
+        </p>
+        <h5 class="card-title">
+          <strong>Le Coeur sur la Table</strong>
+        </h5>
+        <h6>Victoire Tuaillon</h6>
+        <p class="card-text">
+          Parce que s’aimer est l’une des façons de faire la révolution.
+          Une fois par semaine, un épisode pour réinventer nos relations
+          amoureuses, nos liens avec nos ami·e·s, nos parent·e·s et nos
+          amant·e·s.
+        </p>
+        <div class="podcast-link-container">
+          <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png"
+          alt="logo spotify"
+          class="podcast-link"
+          />
+          <img
+          src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png"
+          alt="logo apple podcast"
+          class="podcast-link"
+          />
+          <img
+          src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD"
+          alt="google podcast"
+          class="podcast-link"
+          />
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 podcasts-item show-all asie famille psychologie amour temoignage">
+      <img
+      src="https://www.paulette-magazine.com/wp-content/uploads/2021/04/cover_asiattitudes_haute_definition.jpg"
+      class="card-img-top"
+      alt="..."
+      />
+      <div class="card-body">
+        <p class="tags-container">
+          <span class="tag light asi">Asie</span>
+          <span class="tag fam">Famille</span>
+          <span class="tag psy">Psychologie</span>
+          <span class="tag amo">Amour</span>
+          <span class="tag light tem">Témoignages</span>
+        </p>
+        <h5 class="card-title"><strong>Asiattitudes</strong></h5>
+        
+        <h6>Mélanie Hong</h6>
+        <p class="card-text">
+          A travers des interviews de personnalités, des recommandations
+          culturelles et des chroniques, Asiattitudes propose des
+          inspirations, des réflexions et des informations sur les
+          histoires liées à la diaspora asiatique en France.
+        </p>
+        <div class="podcast-link-container">
+          <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png"
+          alt="logo spotify"
+          class="podcast-link"
+          />
+          <img
+          src="https://www.apple.com/v/apple-podcasts/b/images/meta/apple-podcasts_wechat__cq3l3kjucay6_og.png"
+          alt="logo apple podcast"
+          class="podcast-link"
+          />
+          <img
+          src="https://play-lh.googleusercontent.com/BQUYd1Th9Z_XI5wtklPQDHmiNkSOzBakOnpk-Ni8CBTyHb0E7UM5LpyjRW9BWs4fUuVD"
+          alt="google podcast"
+          class="podcast-link"
+          />
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- ***** END of BLOCK PODCASTS ***** -->
+
+<!-- ***** BLOCK SUBSCRIBE ***** -->
+
+<div class="container-fluid subscribe" id="subscribe">
+  <div class="container subscribe-box">
+    <div class="container subscribe-text">
+      <h4>Call to action</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+        saepe, aut blanditiis optio minima dignissimos. Impedit fugiat
+        nemo mollitia vero soluta, provident ea fugit in corrupti
+        praesentium, quam quas? Iure.
+      </p>
+    </div>
+    <div class="container subscribe">
+      <a href="#">Subscribe</a>
+    </div>
+  </div>
+</div>
+
+<!-- ***** End of BLOCK SUBSCRIBE ***** -->
+
+<!-- ***** BOOTSTRAP SCRIPT ***** -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="./script.js"></script>
+<script src="./script.js"></script>
+
+<!-- ***** End of BOOTSTRAP SCRIPT ***** -->
+<footer>Copyright © Laura Latuillerie 2022</footer>
 </body>
 </html>

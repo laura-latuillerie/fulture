@@ -1,37 +1,14 @@
-filterObjects("all");
+$("#podcasts-filters li").click(function () {
+  $("#podcasts-filters li").removeClass("filter-active");
+  $(this).addClass("filter-active");
 
-function filterObjects(c) {
-  var x, i;
-  x = document.getElementsByClassName("box");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    removeClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-  }
-}
+  var selectedFilter = $(this).data("filter");
+  $("#podcasts-wrapper").fadeTo(100, 0);
 
-// Show filtered elements
-function addClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
+  $(".podcasts-item").fadeOut().css("transform", "scale(0)");
 
-// Hide elements that are not selected
-function removeClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
+  setTimeout(function () {
+    $(selectedFilter).fadeIn(100).css("transform", "scale(1)");
+    $("#podcasts-wrapper").fadeTo(300, 1);
+  }, 300);
+});

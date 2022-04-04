@@ -1,0 +1,56 @@
+/*************** TAGS ***************/
+.tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.tag:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+.tag.light {
+  color: black;
+}
+.tag.light:hover {
+  color: black;
+}
+.all {
+  background-color: aliceblue;
+}
+.afr {
+  background-color: darkred;
+}
+.amo {
+  background-color: red;
+}
+.asi {
+  background-color: chartreuse;
+}
+.fam {
+  background-color: orange;
+}
+.rac {
+  background-color: black;
+}
+.imm {
+  background-color: palevioletred;
+}
+.sex {
+  background-color: blueviolet;
+}
+.soc {
+  background-color: aqua;
+}
+.psy {
+  background-color: brown;
+}
+.tem {
+  background-color: peachpuff;
+}
