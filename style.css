@@ -18,8 +18,13 @@ body {
   text-align: center;
 }
 
-h1 {
+h1,
+h2 span,
+h4 {
   font-family: "High Cruiser", sans-serif;
+}
+
+h1 {
   font-size: 3rem;
   line-height: 0.75em;
 }
@@ -30,8 +35,8 @@ h2 {
   text-transform: capitalize;
 }
 
-h2 span {
-  font-family: "High Cruiser", sans-serif;
+h2 span,
+h4 {
   font-size: 2rem;
 }
 
@@ -120,7 +125,7 @@ header,
   margin: 10px auto 40px auto;
 }
 
-#podcasts-block .podcasts-item {
+.podcast-wrapper.podcasts-item {
   height: 300px;
   overflow: hidden !important;
   margin-bottom: 15px;
@@ -184,4 +189,62 @@ header,
   width: 100%;
   margin: auto;
   bottom: 20px;
+}
+
+/*************** BLOCK QUOTE ***************/
+
+.quote-words {
+  margin-top: 50px;
+  background-color: #832138;
+}
+
+.quote-words-content {
+  position: relative;
+  top: -100px;
+  color: white;
+}
+
+.quote-words-content img {
+  width: 30%;
+  margin: 0 auto 50px auto;
+}
+
+blockquote {
+  text-align: justify;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.4rem;
+}
+
+figcaption {
+  text-align: right;
+}
+
+/*************** BLOCK QUOTE ***************/
+
+.subscribe {
+  padding: 100px 0;
+}
+
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 200px;
+  border-radius: 10px;
+  background: #1c4b64;
+  box-shadow: 0 0 20px gainsboro;
+  color: white;
+}
+
+.subscribe-text {
+  text-align: left;
+  padding-right: 20%;
+}
+
+/*************** BLOCK QUOTE ***************/
+
+footer {
+  padding: 10px;
+  background-color: gainsboro;
 }
